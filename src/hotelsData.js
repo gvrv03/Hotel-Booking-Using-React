@@ -1,0 +1,47 @@
+export const hotelsData = [
+  {
+    id:"jhsdgfsjh783658735",
+    name: "Luxury Hotel",
+    location: "New York City",
+    description: "A luxurious hotel in the heart of Manhattan.",
+    rating: 4.5,
+    pricePerNight: 250,
+    numberOfRooms: 200,
+    images: [
+      "https://example.com/image1.jpg",
+      "https://example.com/image2.jpg",
+      "https://example.com/image3.jpg",
+    ],
+    thumbnail: "https://example.com/thumbnail.jpg",
+  },
+  {
+    id:"jhsdgfsjh783658735",
+    name: "Beach Resort",
+    location: "Miami",
+    description: "A stunning beachfront resort with breathtaking views.",
+    rating: 4.8,
+    pricePerNight: 350,
+    numberOfRooms: 150,
+    images: [
+      "https://example.com/beach1.jpg",
+      "https://example.com/beach2.jpg",
+      "https://example.com/beach3.jpg",
+    ],
+    thumbnail: "https://example.com/beach_thumbnail.jpg",
+  },
+  {
+    id:"jhsdgfsjh783658735",
+    name: "Mountain Retreat",
+    location: "Aspen",
+    description: "A cozy retreat nestled in the scenic mountains of Aspen.",
+    rating: 4.3,
+    pricePerNight: 200,
+    numberOfRooms: 100,
+    images: [
+      "https://example.com/mountain1.jpg",
+      "https://example.com/mountain2.jpg",
+      "https://example.com/mountain3.jpg",
+    ],
+    thumbnail: "https://example.com/mountain_thumbnail.jpg",
+  },
+];
