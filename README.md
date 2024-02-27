@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Hotel Booking Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Hotel Booking Application! This application serves as a platform for users to book hotel accommodations conveniently. It utilizes local storage as a database to securely store user booking details.
 
-## Available Scripts
+## Screenshots
+![image](https://github.com/gvrv03/Hotel-Booking-Using-React/assets/129073397/c71ac9d7-687e-47a2-8f21-6d1d6437a097)
 
-In the project directory, you can run:
+## Demo
 
-### `npm start`
+Check out the live demo of the Hotel Booking Application [here](https://hotelbookingnew.vercel.app/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **User-friendly Interface**: The application provides an intuitive and easy-to-use interface for users to navigate and book hotel accommodations hassle-free.
+  
+- **Secure Storage**: Utilizing local storage as the database ensures that user booking details are securely stored within the browser environment, maintaining data privacy and security.
 
-### `npm test`
+- **Responsive Design**: The application is designed to be responsive, ensuring seamless user experience across various devices and screen sizes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Efficient Booking Process**: Users can effortlessly browse available hotels, select desired dates, and complete their bookings in just a few simple steps.
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To run the Hotel Booking Application locally, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/gvrv03/Hotel-Booking-Using-React.git
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navigate to the project directory:
+    ```bash
+    cd Hotel-Booking-Using-React
+    ```
 
-### `npm run eject`
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Start the application:
+    ```bash
+    npm start
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Authors
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Gaurav Narnaware**
+  - Instagram: [@its_gvrv](https://www.instagram.com/its_gvrv)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to explore the codebase and contribute to the project! If you encounter any issues or have suggestions for improvements, please don't hesitate to reach out or submit a pull request. Your feedback is greatly appreciated.
