@@ -8,7 +8,6 @@ const DetailModal = ({
   rating,
   pricePerNight,
   numberOfRooms,
-  images,
   thumbnail,
   stateShow,
   setstateShow,
@@ -36,9 +35,7 @@ const DetailModal = ({
         hotel.description === description &&
         hotel.rating === rating &&
         hotel.pricePerNight === pricePerNight &&
-        hotel.numberOfRooms === numberOfRooms &&
-        JSON.stringify(hotel.images) === JSON.stringify(images) &&
-        hotel.thumbnail === thumbnail
+        hotel.numberOfRooms === numberOfRooms
     );
 
     if (!hotelExists) {
@@ -49,7 +46,6 @@ const DetailModal = ({
         rating,
         pricePerNight,
         numberOfRooms,
-        images,
         thumbnail,
         StayInfo: {
           stayDate,
@@ -71,18 +67,44 @@ const DetailModal = ({
         stateShow ? "" : "hidden"
       } w-full fixed top-0  h-screen left-0  grid place-items-center`}
     >
-      <div
-        onClick={() => {
-          setstateShow(false);
-        }}
-        className="opacity-30 bg-black w-full h-full absolute "
-      />
-      <div className="bg-gray-900 p-10  w-full md:w-[50%]  absolute bottom-0 md:bottom-auto   rounded-md ">
-        <h3 className=" font-bold text-2xl">{name}</h3>{" "}
-        <p className="  text-gray-300 mt-5  text-2xl">{description}</p>{" "}
-        <div className="mt-2">
-          <p>Per Night : {pricePerNight}</p>{" "}
-          <p>No. of rooms : {numberOfRooms}</p>{" "}
+      <div className="opacity-80 transition-all delay-100 ease-linear  bg-black w-full h-full absolute " />
+      <div className="bg-gray-900 p-5 w-full md:w-[50%]  absolute bottom-0 md:bottom-auto   rounded-md ">
+        <div className="flex justify-between items-center">
+          <h3 className=" font-bold text-2xl">{name}</h3>
+          <button
+            onClick={() => {
+              setstateShow(false);
+            }}
+            className="uil uil-times bg-gray-800 p-1 rounded-md text-3xl w-12 h-12 "
+          />
+        </div>{" "}
+        <div className="p-5 flex gap-5 bg-gray-800  md:flex-row flex-col  md:items-center rounded-md mt-5">
+          <div className="" >
+            <img src={thumbnail}   className="rounded-md h-40 w-full " alt={name}/>
+          </div>
+          <div>
+            <p className="  text-gray-200  font-semibold   text-2xl">
+              {description}
+            </p>{" "}
+            <div className="mt-2">
+              <p className=" text-sm md:text-base text-gray-300">
+                Per Night : {pricePerNight}
+              </p>{" "}
+              <p className=" text-sm md:text-base text-gray-300">
+                No. of rooms : {numberOfRooms}
+              </p>{" "}
+            </div>
+            <div className="font-semibold mt-2 justify-between flex gap-2   text-sm text-gray-400">
+              <div className="flex  items-center gap-2">
+                <i class="uil uil-map-pin-alt"></i>
+                <p className="text-[10px] md:text-sm">{location}</p>{" "}
+              </div>
+              <div className="flex  items-center gap-2">
+                <i className=" uil uil-star " />
+                <p className="text-[10px] md:text-sm">{rating}</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="flex gap-5 md:flex-row flex-col mt-5">
           <div className="flex flex-col gap-2 w-full">
@@ -91,7 +113,7 @@ const DetailModal = ({
               Stay Date & Time
             </label>
             <input
-              className="object-none bg-transparent p-2 border w-full  rounded-md  border-gray-800 text-white"
+              className="object-none bg-transparent p-2 border w-full  rounded-md   outline-none  border-gray-800 text-white"
               type="datetime-local"
               onChange={(e) => {
                 setstayDate(e.target.value);
@@ -104,7 +126,7 @@ const DetailModal = ({
               Leave Date & Time
             </label>
             <input
-              className="object-none bg-transparent p-2 border w-full  rounded-md  border-gray-800 text-white"
+              className="object-none bg-transparent p-2 border w-full  rounded-md   outline-none   border-gray-800 text-white"
               type="datetime-local"
               onChange={(e) => {
                 setleaveDate(e.target.value);
@@ -114,7 +136,7 @@ const DetailModal = ({
           <div className="flex flex-col gap-2 w-full">
             <label className="text-gray-500 font-semibold"> No. of Rooms</label>
             <input
-              className="object-none bg-transparent p-2 border w-full  rounded-md  border-gray-800 text-white"
+              className="object-none bg-transparent p-2 border w-full  rounded-md   outline-none  border-gray-800 text-white"
               type="number"
               placeholder="Ex: 5"
               onChange={(e) => {
@@ -126,7 +148,7 @@ const DetailModal = ({
         <button
           onClick={handleBookedHotel}
           type="submit"
-          className="hover:bg-gray-800 w-full mt-5 bg-gray-950 p-3 rounded-md font-semibold"
+          className="hover:bg-gray-800 w-full  mb-12 mt-5 bg-gray-950 p-3 rounded-md font-semibold"
           disabled={loading}
         >
           {loading ? "Loading..." : "Book Now"}

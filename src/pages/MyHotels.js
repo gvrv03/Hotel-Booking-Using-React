@@ -23,12 +23,12 @@ const MyHotels = () => {
   };
 
   return (
-    <div className="text-white p-5 container   m-auto">
+    <div className="text-white mt-14 p-5 container   m-auto">
       <h1 className="font-bold  text-xl md:text-3xl">Your Booking</h1>
       <div className="text-white mt-5 ">
         {hotels.length === 0 && "No Booking Found"}
       </div>{" "}
-      <div className="gap-5 mt-5 grid md:grid-cols-5 grid-cols-2">
+      <div className="gap-5 mt-5 grid md:grid-cols-5 grid-cols-1">
         {hotels?.map((item, index) => {
           return (
             <BookedHotelCard
@@ -43,7 +43,6 @@ const MyHotels = () => {
               rating={item?.rating}
               pricePerNight={item?.pricePerNight}
               numberOfRooms={item?.numberOfRooms}
-              images={item?.images}
               thumbnail={item?.thumbnail}
             />
           );

@@ -2,18 +2,21 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="text-gray-600 body-font">
-      <div className="container  py-8 mx-auto flex items-center sm:flex-row flex-col">
-        <span className=" text-white  font-semibold ml-3 text-xl">StayEase</span>
+    <footer className="text-gray-600  body-font">
+      <div className="container  py-8 px-5 mx-auto flex items-center sm:flex-row flex-col">
+        <div className="text-white text-lg font-semibold ">
+          <span>Book</span>
+          <span className=" text-yellow-500">Stay</span>
+        </div>
         <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
-          © 2020 StayEase —
+          © 2020 BookStay —
           <a
             href="/"
             className="text-gray-600 ml-1"
             rel="noopener noreferrer"
             target="_blank"
           >
-            @knyttneve
+            @gvrv_n
           </a>
         </p>
         <SocialIcon />

@@ -2,10 +2,9 @@ import React from "react";
 import { Toaster } from "react-hot-toast";
 import { hotelsData } from "../hotelsData";
 import HostelCard from "../components/HotelCard";
-import Footer from "../components/Footer";
 const Home = () => {
   return (
-    <div className="  bg-gray-950 h-screen p-5 container m-auto">
+    <div className="  bg-gray-950 mt-14  p-5 container m-auto">
 
       <h1 className="font-bold  text-xl md:text-3xl  mb-5 text-white">
         Top Hotels
@@ -22,14 +21,12 @@ const Home = () => {
               rating={item?.rating}
               pricePerNight={item?.pricePerNight}
               numberOfRooms={item?.numberOfRooms}
-              images={item?.images}
               thumbnail={item?.thumbnail}
             />
           );
         })}
       </div>
 
-      <Footer/>
     </div>
   );
 };

@@ -8,14 +8,15 @@ const BookedHotelCard = ({
   rating,
   pricePerNight,
   removeHotel,
+  thumbnail,
   StayInfo,
 }) => {
   return (
     <div className="  text-white bg-gray-900 rounded-sm">
       <img
         className="w-full rounded-sm "
-        src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/200738810.jpg?k=6354378e511f6ce9da60591dd771f9f338494cc57d002f0fd61ce63003b614dc&o=&hp=1"
-        alt=""
+        src={thumbnail}
+        alt={name}
         srcset=""
       />
       <div className="p-5">
