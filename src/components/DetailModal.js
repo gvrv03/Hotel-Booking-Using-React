@@ -148,7 +148,7 @@ const DetailModal = ({
         <button
           onClick={handleBookedHotel}
           type="submit"
-          className="hover:bg-gray-800 w-full  mb-12 mt-5 bg-gray-950 p-3 rounded-md font-semibold"
+          className="hover:bg-gray-800 w-full   md:mb-0 mb-12 mt-5 bg-gray-950 p-3 rounded-md font-semibold"
           disabled={loading}
         >
           {loading ? "Loading..." : "Book Now"}
