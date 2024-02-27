@@ -13,7 +13,7 @@ const HotelCard = ({
   const [stateShow, setstateShow] = useState(false);
   return (
     <div className="  text-white bg-gray-900 rounded-sm">
-      <img className="w-full rounded-sm " src={thumbnail} alt={name}  />
+      <img className="w-full rounded-sm  h-28 md:h-52" src={thumbnail} alt={name}  />
       <div className=" p-2 md:p-5">
         <div className="font-semibold mb-2 justify-between flex gap-2   text-sm text-gray-400">
           <div className="flex  items-center gap-2">
